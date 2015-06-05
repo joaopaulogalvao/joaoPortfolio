@@ -118,9 +118,20 @@
 		});
 		wow.init();
 
+		/* ---------------------------------------------- /*
+		 * Modal Bradesco Stop
+		/* ---------------------------------------------- */
 
-	$("#myModal .modal-backdrop, #myModal .close, #myModal .btn").on("click", function() {
-    $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+	$("#myModalBradesco .modal-backdrop, #myModalBradesco .close, #myModalBradesco .btn").on("click", function() {
+    $("#myModalBradesco iframe").attr("src", $("#myModalBradesco iframe").attr("src"));
+	});
+
+		/* ---------------------------------------------- /*
+		 * Modal Tenho Desconto Stop
+		/* ---------------------------------------------- */
+
+	$("#myModalTenhoDesconto .modal-backdrop, #myModalTenhoDesconto .close, #myModalTenhoDesconto .btn").on("click", function() {
+    $("#myModalTenhoDesconto iframe").attr("src", $("#myModalTenhoDesconto iframe").attr("src"));
 	});
 
 		/* ---------------------------------------------- /*
