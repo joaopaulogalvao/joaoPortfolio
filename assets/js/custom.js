@@ -16,7 +16,7 @@
 		/* ---------------------------------------------- */
 
 		$('a[href*=#]').bind("click", function(e){
-           
+
 			var anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $(anchor.attr('href')).offset().top
@@ -45,10 +45,10 @@
 			offset: 70
 		})
 
-        
+
         /* ---------------------------------------------- /*
 		 * Skills
-        /* ---------------------------------------------- */    
+        /* ---------------------------------------------- */
         //var color = $('#home').css('backgroundColor');
 
         $('.skills').waypoint(function(){
@@ -64,12 +64,12 @@
                 });
             });
         },{offset:'80%'});
-        
-        
+
+
         /* ---------------------------------------------- /*
 		 * Quote Rotator
 		/* ---------------------------------------------- */
-       
+
 			$( function() {
 				/*
 				- how to call the plugin:
@@ -90,8 +90,8 @@
 				$( '#cbp-qtrotator' ).cbpQTRotator();
 
 			} );
-		
-        
+
+
 		/* ---------------------------------------------- /*
 		 * Home BG
 		/* ---------------------------------------------- */
@@ -118,6 +118,10 @@
 		});
 		wow.init();
 
+
+	$("#myModal .modal-backdrop, #myModal .close, #myModal .btn").on("click", function() {
+    $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+	});
 
 		/* ---------------------------------------------- /*
 		 * E-mail validation
@@ -146,11 +150,11 @@
 				response.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
 			}
 
-			else {				
+			else {
 				    $('#contact-form .ajax-hidden').fadeOut(500);
 				    response.html("Message Sent. I will contact you asap. Thanks.").fadeIn(500);
 				}
-            
+
             	return false;
 			});
 
