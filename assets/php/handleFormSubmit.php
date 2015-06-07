@@ -7,19 +7,19 @@
 //     echo json_encode($res);
 // }
 
-if($_POST["submit"]) {
-    $recipient="jpgalves1@gmail.com";
-    $subject="Form to email message";
-    $c_name=$_POST["c_name"];
-    $c_email=$_POST["c_email"];
-    $c_message=$_POST["c_message"];
 
-    $mailBody="Name: $c_name\nEmail: $c_email\n\n$c_message";
+$recipient="jpgalves1@gmail.com";
+$subject="Form to email message";
+$c_name=$_POST["c_name"];
+$c_email=$_POST["c_email"];
+$c_message=$_POST["c_message"];
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$c_email>");
+$mailBody="Name: $c_name\nEmail: $c_email\n\n$c_message";
 
-    // $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
+mail($recipient, $subject, $mailBody, "From: $sender <$c_email>");
+
+// $thankYou="<p>Thank you! Your message has been sent.</p>";
+
 
 
 ?>
